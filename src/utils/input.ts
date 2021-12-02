@@ -1,7 +1,9 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable indent */
 export const mockInputSearch = [
     {
       id: 1,
-      name: 'Design e Tecnologia',
+      title: 'Design e Tecnologia',
       description: null,
       service_id: null,
       presence: 'opcional',
@@ -14,7 +16,7 @@ export const mockInputSearch = [
       sub_services: [
         {
           id: 2,
-          name: 'Áudio/Visual',
+          title: 'Áudio/Visual',
           description: null,
           service_id: 1,
           presence: 'opcional',
@@ -28,7 +30,7 @@ export const mockInputSearch = [
         },
         {
           id: 3,
-          name: 'Gráfica',
+          title: 'Gráfica',
           description: null,
           service_id: 1,
           presence: 'opcional',
@@ -41,7 +43,7 @@ export const mockInputSearch = [
           sub_services: [
             {
               id: 4,
-              name: 'Design de logos',
+              title: 'Design de logos',
               description: null,
               service_id: 3,
               presence: 'opcional',
@@ -57,7 +59,7 @@ export const mockInputSearch = [
         },
         {
           id: 5,
-          name: 'Tecnologia',
+          title: 'Tecnologia',
           description: null,
           service_id: 1,
           presence: 'opcional',
@@ -70,7 +72,7 @@ export const mockInputSearch = [
           sub_services: [
             {
               id: 6,
-              name: 'Desenvolvimento de Sites',
+              title: 'Desenvolvimento de Sites',
               description: null,
               service_id: 5,
               presence: 'opcional',
@@ -88,7 +90,7 @@ export const mockInputSearch = [
     },
     {
       id: 7,
-      name: 'Eventos',
+    title: 'Eventos',
       description: null,
       service_id: null,
       presence: 'opcional',
@@ -101,7 +103,7 @@ export const mockInputSearch = [
       sub_services: [
         {
           id: 8,
-          name: 'Animação de festas',
+          title: 'Animação de festas',
           description: null,
           service_id: 7,
           presence: 'presencial',
@@ -114,7 +116,7 @@ export const mockInputSearch = [
           sub_services: [
             {
               id: 9,
-              name: 'Animador de festas',
+              title: 'Animador de festas',
               description: null,
               service_id: 8,
               presence: 'presencial',
@@ -132,7 +134,7 @@ export const mockInputSearch = [
     },
     {
       id: 10,
-      name: 'Reformas e Reparos',
+      title: 'Reformas e Reparos',
       description: null,
       service_id: null,
       presence: 'opcional',
@@ -145,7 +147,7 @@ export const mockInputSearch = [
       sub_services: [
         {
           id: 11,
-          name: 'Pedreiro',
+          title: 'Pedreiro',
           description: null,
           service_id: 10,
           presence: 'presencial',
@@ -161,7 +163,7 @@ export const mockInputSearch = [
     },
     {
       id: 12,
-      name: 'Design e tecnologia',
+      title: 'Design e tecnologia',
       description: null,
       service_id: null,
       presence: 'opcional',
@@ -174,7 +176,7 @@ export const mockInputSearch = [
       sub_services: [
         {
           id: 13,
-          name: 'Áudio/Visual',
+          title: 'Áudio/Visual',
           description: null,
           service_id: 12,
           presence: 'opcional',
@@ -188,7 +190,7 @@ export const mockInputSearch = [
         },
         {
           id: 14,
-          name: 'Gráfica',
+          title: 'Gráfica',
           description: null,
           service_id: 12,
           presence: 'opcional',
@@ -201,7 +203,7 @@ export const mockInputSearch = [
           sub_services: [
             {
               id: 15,
-              name: 'Design de logos',
+              title: 'Design de logos',
               description: null,
               service_id: 14,
               presence: 'opcional',
@@ -217,7 +219,7 @@ export const mockInputSearch = [
         },
         {
           id: 16,
-          name: 'Tecnologia',
+          title: 'Tecnologia',
           description: null,
           service_id: 12,
           presence: 'opcional',
@@ -230,7 +232,7 @@ export const mockInputSearch = [
           sub_services: [
             {
               id: 17,
-              name: 'Desenvolvimento de Sites',
+              title: 'Desenvolvimento de Sites',
               description: null,
               service_id: 16,
               presence: 'opcional',
@@ -248,7 +250,7 @@ export const mockInputSearch = [
     },
     {
       id: 18,
-      name: 'Eventos',
+      title: 'Eventos',
       description: null,
       service_id: null,
       presence: 'opcional',
@@ -261,7 +263,7 @@ export const mockInputSearch = [
       sub_services: [
         {
           id: 19,
-          name: 'Animação de festas',
+        title: 'Animação de festas',
           description: null,
           service_id: 18,
           presence: 'presencial',
@@ -274,7 +276,7 @@ export const mockInputSearch = [
           sub_services: [
             {
               id: 20,
-              name: 'Animador de festas',
+              title: 'Animador de festas',
               description: null,
               service_id: 19,
               presence: 'presencial',
@@ -292,7 +294,7 @@ export const mockInputSearch = [
     },
     {
       id: 21,
-      name: 'Reformas e Reparos',
+      title: 'Reformas e Reparos',
       description: null,
       service_id: null,
       presence: 'presencial',
@@ -305,7 +307,7 @@ export const mockInputSearch = [
       sub_services: [
         {
           id: 22,
-          name: 'Pedreiro',
+        title: 'Pedreiro',
           description: null,
           service_id: 21,
           presence: 'presencial',
@@ -321,7 +323,7 @@ export const mockInputSearch = [
     },
     {
       id: 23,
-      name: 'Aulas',
+      title: 'Aulas',
       description: null,
       service_id: null,
       presence: 'opcional',
@@ -335,7 +337,7 @@ export const mockInputSearch = [
     },
     {
       id: 24,
-      name: 'Automotivo',
+      title: 'Automotivo',
       description: null,
       service_id: null,
       presence: 'opcional',
@@ -349,7 +351,7 @@ export const mockInputSearch = [
     },
     {
       id: 25,
-      name: 'Saúde',
+      title: 'Saúde',
       description: null,
       service_id: null,
       presence: 'opcional',
@@ -363,7 +365,7 @@ export const mockInputSearch = [
     },
     {
       id: 26,
-      name: 'Assistência Técnica',
+      title: 'Assistência Técnica',
       description: null,
       service_id: null,
       presence: 'opcional',
@@ -377,7 +379,7 @@ export const mockInputSearch = [
     },
     {
       id: 27,
-      name: 'Moda e Beleza',
+      title: 'Moda e Beleza',
       description: null,
       service_id: null,
       presence: 'opcional',
@@ -391,7 +393,7 @@ export const mockInputSearch = [
     },
     {
       id: 28,
-      name: 'Consultoria',
+      title: 'Consultoria',
       description: null,
       service_id: null,
       presence: 'opcional',

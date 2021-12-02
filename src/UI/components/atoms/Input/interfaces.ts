@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable prettier/prettier */
 export interface InputProps {
     name: string;
     icon?: string;
@@ -28,33 +30,35 @@ export interface InputProps {
     rows: number;
     cols: number;
     fontSize: string;
-  }
-  
-  export interface InputPropsStyle {
+    returnValue: any;
+    colorIconDiv: any;
+}
+
+export interface InputPropsStyle {
     backgroundColor: string;
     height: number;
     color: string;
     borderRadius: string;
     padding: string;
     fontSize: string;
-  }
-  
-  export interface InputPropsLabel {
+}
+
+export interface InputPropsLabel {
     labelFontSize: number;
     for: string;
     fontWeight: string;
     colorLabel: string;
-  }
-  
-  export interface InputValueReference {
+}
+
+export interface InputValueReference {
     value: string;
-  }
-  
-  export interface InputRef {
+}
+
+export interface InputRef {
     focus(): void;
-  }
-  
-  export interface ContainerProps {
+}
+
+export interface ContainerProps {
     isFocused: boolean;
     isErrored: boolean;
     backgroundColor: string;
@@ -63,9 +67,8 @@ export interface InputProps {
     padding: string;
     borderColor: string;
     isSearch?: boolean;
-  }
-  
-  export interface IconProps {
+}
+
+export interface IconProps {
     isFilled: boolean;
-  }
-  
+}

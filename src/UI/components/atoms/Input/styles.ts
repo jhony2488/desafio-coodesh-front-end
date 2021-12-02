@@ -1,8 +1,9 @@
+/* eslint-disable indent */
 import styled, { css } from 'styled-components';
 
 import fonts from '../../../../utils/fonts';
 import colors from '../../../../utils/colors';
-import { ContainerProps, InputPropsStyle, InputPropsLabel } from './interfaces';
+import { ContainerProps, InputPropsLabel } from './interfaces';
 
 export const Container = styled.div`
     display: grid;

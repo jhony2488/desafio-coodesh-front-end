@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable indent */
 /* eslint-disable prettier/prettier */
 import api from './api';
-export const ServiceHighlights = async (setArticles, setMessageError) => {
+export const ServiceHighlights = async (setArticles: any, setMessageError: any) => {
     await api
         .get('/articles')
         .then((response) => {
