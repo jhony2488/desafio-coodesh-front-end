@@ -32,6 +32,12 @@ module.exports = {
         'import/no-anonymous-default-export': 'off',
       },
     },
+    {
+        files: ['*.ts', '*.tsx'], // Your TypeScript files extension
+        parserOptions: {
+          project: ['./tsconfig.json'], // Specify it only for TypeScript files
+        },
+      }
   ],
   rules: {
     indent: ['error', 2, { SwitchCase: 1 }],
