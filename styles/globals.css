@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
 [lang="${language}"]:before,
 [xml\:lang="${language}"]:before {
   content: "${prefix}${language}${suffix}";
@@ -1838,8 +1840,6 @@
   content: '${prefix}${language}${suffix}';
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-
 [aria-dropeffect=copy]:hover {
   cursor: copy;
 }
@@ -1978,7 +1978,7 @@ img[alt][longdesc]:hover {
 }
 
 html {
-  font-family: 'Nunito', sans-serif, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Roboto Condensed', sans-serif, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
@@ -2234,7 +2234,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -2324,4 +2324,3 @@ template {
 [hidden] {
   display: none;
 }
-
