@@ -10,7 +10,7 @@ import Image from './index';
 import colors from '../../../../utils/colors';
 
 export default {
-    title: 'Image',
+    title: 'Design System/Image',
     component: Image,
 };
 

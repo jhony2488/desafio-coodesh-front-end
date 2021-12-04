@@ -9,7 +9,7 @@ import colors from '../../../../utils/colors';
 import { mockInputSearch } from '../../../../utils/input';
 
 export default {
-    title: 'Input',
+    title: 'Design System/Input',
     component: Input,
 };
 
