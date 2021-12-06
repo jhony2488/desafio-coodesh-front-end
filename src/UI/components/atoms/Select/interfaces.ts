@@ -1,6 +1,6 @@
 export interface SelectInterface {
     name: string;
-    onChange: () => any;
+    onChange: (value: any) => any;
     defaultValue?: string;
     placeholder: string;
     className?: string;

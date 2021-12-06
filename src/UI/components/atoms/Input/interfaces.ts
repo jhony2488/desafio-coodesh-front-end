@@ -4,8 +4,6 @@ export interface InputProps {
     name: string;
     icon?: string;
     label: string;
-    secureTextEntry: boolean;
-    required: boolean;
     inputError: string;
     control?: any;
     type?: string;
@@ -27,10 +25,7 @@ export interface InputProps {
     filterPreviewSearch?: (datas: any[], data: string) => any[];
     KEYS_TO_FILTERS?: string[];
     marginLeft: number;
-    rows: number;
-    cols: number;
     fontSize: string;
-    returnValue: any;
     colorIconDiv: any;
 }
 

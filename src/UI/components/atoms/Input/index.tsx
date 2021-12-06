@@ -45,7 +45,7 @@ const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
         dataSearch = [{ id: 1, title: 'Desenvolvimento de sites' }],
         KEYS_TO_FILTERS = ['title'],
         marginLeft = 18,
-        fontSize = '16px',
+        fontSize = '16px'
     }
 ) => {
     const [isFocused, setIsFocused] = useState(false);

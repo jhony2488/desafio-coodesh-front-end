@@ -6,7 +6,6 @@ import colors from '../../../../utils/colors';
 import { ContainerProps, InputPropsLabel } from './interfaces';
 
 export const Container = styled.div`
-    display: grid;
     min-width: 100%;
     max-width: 100%;
 `;
@@ -30,31 +29,18 @@ export const ContainerInput = styled.div<ContainerProps>`
     background-color: ${(props) => props.backgroundColor || 'white'};
 
     align-content: center;
-    border: 1px;
-    border-color: black;
+    border: 1.5px solid black;
     ${(props) =>
         props.isFocused &&
         css`
             border-color: #666666;
         `}
     &:focus-within {
-        border: 2px solid;
-        border-bottom: ${(props) => {
-            if (props.isSearch) {
-                return '0px';
-            }
-            return '2px solid';
-        }};
+        border: 2.5px solid;
         border-color: ${(props) => props.borderColor || '#666666'};
     }
     &:focus {
-        border: 2px solid;
-        border-bottom: ${(props) => {
-            if (props.isSearch) {
-                return '0px';
-            }
-            return '2px solid';
-        }};
+        border: 2.5px solid;
         border-color: ${(props) => props.borderColor || '#666666'};
     }
     ${(props) =>
