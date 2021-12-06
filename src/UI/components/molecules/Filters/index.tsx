@@ -16,7 +16,6 @@ import {
 } from './styles';
 
 const FiltersComponent: React.FC = () => {
-    const [valueDate, setValueDate] = useState('');
 
     return (
         <Filters>
@@ -29,7 +28,7 @@ const FiltersComponent: React.FC = () => {
                         type='other'
                         typeInput='text'
                         backgroundColor='white'
-                        height={14}
+                        height={36}
                         color='black'
                         size={16}
                         padding='12px'
@@ -39,7 +38,7 @@ const FiltersComponent: React.FC = () => {
                         colorIconDiv={colors.purple}
                         borderRadius='5px'
                         labelFontSize={16}
-                        marginRight={-30}
+                        marginRight={-3}
                         borderColor='black'
                         placeholder='Pesquisar artigos'
                         dataSearch={mockInputSearch}

@@ -1,9 +1,8 @@
 /* eslint-disable indent */
 import axios from 'axios';
-import 'dotenv';
 
 const api = axios.create({
-    baseURL: process.env.API_URL,
+  baseURL: 'https://api.spaceflightnewsapi.net/v3',
 });
 
 export default api;

@@ -5,7 +5,8 @@ export interface ParagraphsInterface {
     fontWeight: string;
     textAlign: string;
     type?: 'Paragraphs' | 'Date' | 'ItemNewsSite';
-    backgroundColor: string;
+    backgroundColor?: string;
+    borderColor?: string;
 }
 
 export interface ParagraphsStyleInterface {
@@ -20,4 +21,5 @@ export interface DateDivStyleInterface {
     title: string;
     backgroundColor: string;
     fontSize: string;
+    borderColor: string;
 }

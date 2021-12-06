@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable prettier/prettier */
 export const dateFormat = (value: string) => {
@@ -12,4 +13,11 @@ export const parOrImpar = (number: number) => {
     return 'Par';
   }
   return 'Impar';
+};
+
+export const infiniteScrool = (page: number, items: any[], scroolSize: number) => {
+  console.log(page * scroolSize);
+  console.log(items);
+  const itemsFilter = items.slice(0, page * scroolSize);
+  return itemsFilter;
 };

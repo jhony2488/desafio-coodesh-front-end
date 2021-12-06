@@ -99,12 +99,12 @@ const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
                         color: ${color};
                         }
                     .money-input:focus {
-                        box - shadow: 0 0 0 0;
+                        box-shadow: 0 0 0 0;
                         outline: 0;
                     }
                     textarea:focus, input:focus {
-                        box-shadow: 0 0 0 0;
-                        outline: 0;
+                        box-shadow: 0 0 0 0 !important;
+                        outline: 0 !important;
                     }
                         `
                 ].join('\n')
@@ -124,7 +124,7 @@ const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
                         width: '100%',
                         height: `${height - 5}px`,
                         borderRadius: borderRadius || '10px',
-                        border: '0px',
+                        border: '0px !important',
                         color: color || 'black',
                         backgroundColor: backgroundColor || 'white',
                         flexShrink: 1,

@@ -63,7 +63,7 @@ Date.args = {
 export const ItemNewsSite: any = TemplateNewSite.bind({});
 ItemNewsSite.args = {
     content: ItemNewsSiteMock,
-    color: colors.black,
+    color: colors.white,
     fontSize: "12",
     fontWeight: "400",
     textAlign: "center",

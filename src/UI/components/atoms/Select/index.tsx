@@ -4,10 +4,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable prettier/prettier */
 /* eslint-disable indent */
-import React from 'react';
+import React, { useContext } from 'react';
 import { SelectInterface } from './interfaces';
 import 'react-dropdown-now-with-space/style.css';
 import { options } from '../../../../utils/select';
+import { ArticlesContext } from '../../../../context/Articles';
+import { dateFormat } from '../../../../utils/functions';
 
 import {
     Select,
@@ -16,7 +18,6 @@ import {
 const SelectComponent: React.FC<SelectInterface> = (
     {
         name = "nome select",
-        onChange = (value: string) => console.log(value),
         defaultValue = "",
         placeholder = "Select",
         className = "select",
@@ -24,6 +25,20 @@ const SelectComponent: React.FC<SelectInterface> = (
         isTwo = false,
     }
 ) => {
+    const { articles, setArticles } = useContext(ArticlesContext);
+
+    const onChange = (value: any) => {
+        console.log(value);
+        if (value.value == 'Mais antigas') {
+            const sortArticles = articles.sort((a, b) => dateFormat(a.updatedAt) > dateFormat(b.updatedAt));
+            setArticles(sortArticles);
+            console.log(2);
+            return;
+        }
+        console.log(1);
+        const sortArticles = articles.sort((a, b) => dateFormat(a.updatedAt) < dateFormat(b.updatedAt));
+        setArticles(sortArticles);
+    };
     return (
         <>
             <Select
