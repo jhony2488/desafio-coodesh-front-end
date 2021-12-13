@@ -4,11 +4,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable prettier/prettier */
 /* eslint-disable indent */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect,  useContext } from 'react';
 import colors from '../../../../utils/colors';
 import SelectSort from '../../atoms/Select';
 import InputSearch from '../../atoms/Input';
-import { mockInputSearch } from '../../../../utils/input';
+import { ArticlesContext } from '../../../../context/Articles';
+import { ServiceHighlights } from '../../../../services/articles';
 
 import {
     Filters,
@@ -16,6 +17,13 @@ import {
 } from './styles';
 
 const FiltersComponent: React.FC = () => {
+
+    const { articles, setArticles } = useContext(ArticlesContext);
+
+    const onChangeSort = (value: any) => {
+        void ServiceHighlights(setArticles, ()=>{}, true, value);
+        return;
+    }
 
     return (
         <Filters>
@@ -41,7 +49,7 @@ const FiltersComponent: React.FC = () => {
                         marginRight={-3}
                         borderColor='black'
                         placeholder='Pesquisar artigos'
-                        dataSearch={mockInputSearch}
+                        dataSearch={articles}
                         marginLeft={8}
                         fontSize='16px'
                         KEYS_TO_FILTERS={['title']}
@@ -50,7 +58,7 @@ const FiltersComponent: React.FC = () => {
                 <div style={{ marginRight: 5, backgroundColor:'red'}}>
                     <SelectSort
                         name="select" 
-                        onChange={(value: string) => console.log(value)}
+                        onChange={onChangeSort}
                         defaultValue=""
                         placeholder="Sort"
                         className="select"

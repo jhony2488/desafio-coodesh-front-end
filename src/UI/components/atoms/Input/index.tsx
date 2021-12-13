@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable prettier/prettier */
 /* eslint-disable indent */
-import React, { useState, useEffect, forwardRef } from 'react';
+import React, { useState, useEffect, forwardRef, useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { BiSearch } from 'react-icons/bi';
 import SearchInput, { createFilter } from 'react-search-input';
@@ -12,6 +12,8 @@ import SearchInput, { createFilter } from 'react-search-input';
 import fonts from '../../../../utils/fonts';
 import colors from '../../../../utils/colors';
 import { InputProps, InputRef } from './interfaces';
+import { ArticlesContext } from '../../../../context/Articles';
+import { ServiceHighlights } from '../../../../services/articles';
 
 import {
     Container,
@@ -49,20 +51,23 @@ const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
     }
 ) => {
     const [isFocused, setIsFocused] = useState(false);
-
+    const { articles, setArticles } = useContext(ArticlesContext);
     const [isErrored, setIsErrored] = useState(false);
     const [isListSearch, setIsListSearch] = useState(true);
     const [isNotListSearch, setIsNotListSearch] = useState(false);
     const [filterPreviewSearchValue, setFilterPreviewSearchValue] = useState('');
     const [filtered, setFiltered] = useState([]);
     const [valueSearch, setValueSearch] = useState('');
-    const { getValues, setValue } = useForm();
+    const { setValue } = useForm();
 
     const handleIconClick = () => {
-
+        setFiltered(dataSearch.filter(createFilter(filterPreviewSearchValue, KEYS_TO_FILTERS)));
     };
 
     const getNameSearch = (value: string) => {
+        if(value==''){
+            void ServiceHighlights(setArticles, ()=>{});
+        }
         setValue(name, value);
         setFilterPreviewSearchValue(value);
         setValueSearch(value);
@@ -78,6 +83,10 @@ const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
     useEffect(() => {
         setFiltered(dataSearch.filter(createFilter(filterPreviewSearchValue, KEYS_TO_FILTERS)));
     }, [filterPreviewSearchValue]);
+
+    useEffect(() => {
+        setArticles(filtered);
+    }, [filtered]);
 
     useEffect(() => {
         if (inputError) {

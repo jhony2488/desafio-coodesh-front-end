@@ -16,7 +16,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>
+      <main style={{padding: '16px', paddingBottom: '32px', paddingLeft: '32px', paddingRight: '32px'}}>
+        <hr style={{marginBottom: '32px'}} />
         <Articles />
       </main>
     </div>

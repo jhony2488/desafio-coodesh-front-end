@@ -1,34 +1,97 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# desafio-coodesh-front-end
 
-First, run the development server:
+<p align="center" id="about">🚀 Português: pagination-front-end é uma biblioteca voltada para realização de paginação no front end</p>
+
+<h2 id="tabela-de-conteudo">Tabela de conteúdos(table of contents)</h2>
+<!--ts-->
+   
+- [Sobre(About)](#about)
+
+- [Tabela de Conteudo(table of contents)](#tabela-de-conteudo)
+
+- [Como usar(How to use)](#como-usar)
+
+  - [Instalação(Installation)](#instalacao)
+  
+  - [Uso(Use)](#uso)
+
+- [Testes(Tests)](#-testes)
+
+- [Tecnologias(Technologies)](#tecnologias)
+
+- [Autor(Author)](#autor)
+
+- [Licença(License)](#licenca)
+<!--te-->
+
+<h2 id="como-usar">Como usar(How to use)</h2>
+
+<h3 id="instalacao">Instalação(Installation)</h3>
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Instalação(Installation)
+$ npm i pagination-front-end || yarn add pagination-front-end
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h3>Instalação baixando o repositório(Installation by downloading the repository)</h3>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+# Clone este repositório(Clone this repository)
+$ git clone <https://github.com/jhony2488/pagination-frontend>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+# Acesse a pasta do projeto no terminal/cmd(Access the project folder in the terminal/cmd)
+$ cd pagination-frontend
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Instale as dependências(install dependencies)
+$ npm install || yarn add
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+<h3 id="uso">Uso(Use)</h3>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<h2 id="tests">🛠 Testes(Tests)</h2>
 
-## Deploy on Vercel
+```bash
+# Executar os testes(Run the tests)
+$ npm run test || yarn test
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h2 id="tecnologias">🛠 Tecnologias(Technologies)</h2>
+
+Português: As seguintes ferramentas foram usadas na construção desta biblioteca:
+English: The following tools were used in building this library:
+
+- [Node.js](https://nodejs.org/en/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+
+<h2 id="autor" align="center">Autor(Author)</h2>
+
+<div align="center">
+
+<a href="https://jhonyaraujo.netlify.app/">
+ <img style="border-radius: 50%;" src="https://raw.githubusercontent.com/jhony2488/images/master/perfil.jpg" width="200px;" alt="Jhonata Vinicius"/>
+ <br />
+ <h2>Jhonata Vinicius Da Silva Araujo(Jhony Araujo) </h2></a>
+
+<p>Feito por Jhonata Vinicius 👋🏽 Entre em contato!(Made by Jhonata Vinicius 👋🏽 Get in touch!)</p>
+
+<a href="https://twitter.com/JhonyAraujoDev" align="center"><img src="https://raw.githubusercontent.com/jhony2488/images/master/twitter.png" height="60px" width="60px" /></a>
+<a href="https://www.linkedin.com/in/jhonatavinicius2488/"><img src="https://raw.githubusercontent.com/jhony2488/images/master/linkedin.png" style="margin-left:10px;" height="60px" width="60px" /></a>
+<a href="https://join.skype.com/invite/v9azzgZrhpWh"><img src="https://raw.githubusercontent.com/jhony2488/images/master/skype%20(1).png" height="60px" width="60px" /></a>
+<a href="https://www.facebook.com/jhony.araujo.dev/"><img src="https://raw.githubusercontent.com/jhony2488/images/master/facebook%20(1).png" height="60px" width="60px" /></a>
+<a href="https://www.instagram.com/jhonyaraujo_oficial/"><img src="https://raw.githubusercontent.com/jhony2488/images/master/instagram.png" height="60px" width="60px" /></a>
+<a href="https://api.whatsapp.com/send?phone=5581983708177"><img src="https://raw.githubusercontent.com/jhony2488/images/master/whatsapp.png" height="60px" width="60px" /></a>
+<a href="https://www.behance.net/jhonyaraujo"><img src="https://raw.githubusercontent.com/jhony2488/images/master/behance.png" height="60px" width="60px" /></a>
+
+</div>
+
+<h2 id="licenca">Licença(License)</h2>
+
+<a href="https://github.com/jhony2488/pagination-frontend/blob/master/LICENSE" align="center">MIT</a>

@@ -8,7 +8,6 @@ export const Filters = styled.div`
   justify-items: end;
   align-items: center;
   height: 100%;
-  background-color: red;
 `;
 
 export const FiltersWrapper = styled.div`

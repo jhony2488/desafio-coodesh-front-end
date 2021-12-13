@@ -2,18 +2,25 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 import api from './api';
-import { infiniteScrool } from '../utils/functions';
+import { sortFunction } from '../utils/functions';
 
 export const ServiceHighlights = async (
   setArticles: any,
   setMessageError: any,
-  page: number,
-  scroolSize: number,
+  onSort = false,
+  value = { value: '' },
 ) => {
   await api
     .get('/articles')
     .then((response: any) => {
-      const articles = infiniteScrool(page * scroolSize, response.data, scroolSize);
+      if (onSort) {
+        const sortArticles = response.data.sort((a: any, b: any) =>
+          sortFunction(a, b, value.value),
+        );
+        setArticles(sortArticles);
+        return sortArticles;
+      }
+      const articles = response.data;
       setArticles(articles);
       return articles;
     })

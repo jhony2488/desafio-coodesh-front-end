@@ -24,6 +24,7 @@ export const ContainerInput = styled.div<ContainerProps>`
   flex-direction: row;
   align-items: center;
   width: 100%;
+  max-width:250px;
   height: ${(props) => props.height}px;
   padding: 0 5px;
   border-radius: ${(props) => props.borderRadius || '10px'};
@@ -55,16 +56,20 @@ export const ContainerInput = styled.div<ContainerProps>`
 export const ContainerSearchPreview = styled.div`
   display: block;
   width: 100%;
-  z-index: 0;
+  max-width:250px;
+  position: absolute;
 `;
 
 export const ContainerSearchPreviewItems = styled.ul`
-  width: calc(100% - 16px);
+  width: calc(100%);
+  max-width:100%;
   background-color: white;
-  position: relative;
-
-  margin-top: -20px;
+  position: absolute;
+  z-index: 3;
+  margin-top: 8px;
   margin-left: 0px;
+  padding-left: 2px;
+  padding-right: 2px;
   padding-top: 8px;
   padding-bottom: 8px;
   border: 1px solid purple;
@@ -79,7 +84,8 @@ export const ContainerSearchPreviewItem = styled.li`
   justify-content: start;
   width: 100%;
   min-width: 100%;
-  margin-left: -7%;
+  max-width:100%;
+  margin-left:6px;
   margin-top: 8px;
   cursor: pointer;
 `;
