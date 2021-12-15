@@ -28,15 +28,17 @@
     "typeRoots": [
       "./node_modules/@types"
     ],
+    "baseUrl": ".",
+    "paths": {}
   },
   "include": [
     "next-env.d.ts",
     "src/*.ts",
     "**/*.tsx",
-    ".eslintrc.js",
+    ".eslintrc.js"
   ],
   "exclude": [
     "node_modules",
     "__tests__/****"
-  ],
+  ]
 }

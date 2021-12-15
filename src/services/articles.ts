@@ -22,7 +22,7 @@ export const ServiceHighlights = async (
       }
       const articles = response.data;
       setArticles(articles);
-      return articles;
+      return response;
     })
     .catch((err: any) => {
       setMessageError(err);

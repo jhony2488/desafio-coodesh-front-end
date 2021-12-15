@@ -34,7 +34,7 @@ const ArticlesComponent: React.FC = () => {
     }
 
     useEffect(() => {
-        void ServiceHighlights(setArticles, setMessageErr, false, '');
+        void ServiceHighlights(setArticles, setMessageErr, false, { value: '' });
     }, []);
 
     useEffect(() => {
