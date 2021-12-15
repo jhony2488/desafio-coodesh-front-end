@@ -40,7 +40,7 @@ const ArticleComponent: React.FC<ArticleInterface> = (
 
     return (
         <>
-            {isPar &&
+            {(isPar || isMobile || isTablet) &&
                 <Article>
                     <ArticleImage>
                         <Image
@@ -66,7 +66,7 @@ const ArticleComponent: React.FC<ArticleInterface> = (
                                 <Paragraphs
                                     content={date}
                                     color={colors.black}
-                                    fontSize="14px"
+                                    fontSize={isMobile ? '10px' : isTablet ? '12px' : '14px'}
                                     fontWeight="400"
                                     textAlign="left"
                                     type='Date'
@@ -75,7 +75,7 @@ const ArticleComponent: React.FC<ArticleInterface> = (
                                     <Paragraphs
                                         content={newSite}
                                         color={colors.white}
-                                        fontSize="11px"
+                                        fontSize={isMobile ? '7px' : isTablet ? '9px' : '11px'}
                                         fontWeight="400"
                                         textAlign='center'
                                         type='ItemNewsSite'
@@ -88,7 +88,7 @@ const ArticleComponent: React.FC<ArticleInterface> = (
                                 <Paragraphs
                                     content={content}
                                     color={colors.black}
-                                    fontSize="16"
+                                    fontSize={isMobile ? '12px' : isTablet ? '14px' : '16px'}
                                     fontWeight="400"
                                     textAlign="left"
                                 />
@@ -106,7 +106,7 @@ const ArticleComponent: React.FC<ArticleInterface> = (
                     </ArticleContent>
                 </Article>}
 
-            {!isPar &&
+            {!isPar && !isMobile && !isTablet &&
                 <Article>
                     <ArticleContent>
                         <div>
@@ -123,7 +123,7 @@ const ArticleComponent: React.FC<ArticleInterface> = (
                                 <Paragraphs
                                     content={date}
                                     color={colors.black}
-                                    fontSize="14px"
+                                    fontSize={isMobile ? '10px' : isTablet ? '12px' : '14px'}
                                     fontWeight="400"
                                     textAlign="left"
                                     type='Date'
@@ -132,7 +132,7 @@ const ArticleComponent: React.FC<ArticleInterface> = (
                                     <Paragraphs
                                         content={newSite}
                                         color={colors.white}
-                                        fontSize="11px"
+                                        fontSize={isMobile ? '7px' : isTablet ? '9px' : '11px'}
                                         fontWeight="400"
                                         textAlign='center'
                                         type='ItemNewsSite'
@@ -145,7 +145,7 @@ const ArticleComponent: React.FC<ArticleInterface> = (
                                 <Paragraphs
                                     content={content}
                                     color={colors.black}
-                                    fontSize="16"
+                                    fontSize={isMobile ? '12px' : isTablet ? '14px' : '16px'}
                                     fontWeight="400"
                                     textAlign="left"
                                 />
@@ -161,15 +161,15 @@ const ArticleComponent: React.FC<ArticleInterface> = (
                             </ArticleButton>
                         </div>
                     </ArticleContent>
-                        <ArticleImage style={{ marginLeft: '12px' }}>
-                            <Image
-                                src={src}
-                                width={widthImage}
-                                height={heightImage}
-                                alt={title}
-                                title={title}
-                            />
-                        </ArticleImage>
+                    <ArticleImage style={{ marginLeft: '12px' }}>
+                        <Image
+                            src={src}
+                            width={widthImage}
+                            height={heightImage}
+                            alt={title}
+                            title={title}
+                        />
+                    </ArticleImage>
                 </Article>}
         </>
     );

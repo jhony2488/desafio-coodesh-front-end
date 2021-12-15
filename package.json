@@ -5,7 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prestart-docker":"docker build . -t desafio-coodesh-front-end",
+    "prestart-docker": "docker build . -t desafio-coodesh-front-end",
     "start-docker": "docker run -p 3000:3000 desafio-coodesh-front-end",
     "lint": "next lint",
     "lint:fix": "yarn lint --fix",
@@ -55,6 +55,7 @@
     "@typescript-eslint/parser": "^4.31.2",
     "babel-loader": "^8.2.3",
     "babel-plugin-inline-import": "^3.0.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^7.23.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-next": "12.0.4",
@@ -70,11 +71,11 @@
     "lint-staged": "^9.5.0",
     "prettier": "2.4.1",
     "ts-jest": "^26.5.4",
+    "ts-node": "^10.0.0",
     "ts-node-dev": "^1.0.0",
     "tsconfig-paths": "^3.9.0",
-    "typescript-eslint": "^0.0.1-alpha.0",
-    "ts-node": "^10.0.0",
-    "typescript": "^4.1.2"
+    "typescript": "^4.1.2",
+    "typescript-eslint": "^0.0.1-alpha.0"
   },
   "browserslist": {
     "production": [

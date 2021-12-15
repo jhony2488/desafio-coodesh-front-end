@@ -8,6 +8,9 @@ export const Filters = styled.div`
   justify-items: end;
   align-items: center;
   height: 100%;
+  @media (max-width: 1080px) {
+    justify-items: center;
+  }
 `;
 
 export const FiltersWrapper = styled.div`
@@ -17,4 +20,8 @@ export const FiltersWrapper = styled.div`
   justify-items: center;
   align-items: center;
   height: 100%;
+  @media (max-width:1080px) {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
 `;

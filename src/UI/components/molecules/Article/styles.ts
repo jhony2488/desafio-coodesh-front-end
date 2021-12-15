@@ -8,6 +8,10 @@ export const Article = styled.section`
   height: 100%;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1080px) {
+    display: grid;
+    justify-content: center;
+  }
 `;
 
 export const ArticleImage = styled.div`
