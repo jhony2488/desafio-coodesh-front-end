@@ -5,6 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "prestart-docker":"docker build . -t desafio-coodesh-front-end",
+    "start-docker": "docker run -p 3000:3000 desafio-coodesh-front-end",
     "lint": "next lint",
     "lint:fix": "yarn lint --fix",
     "storybook": "start-storybook -p 6006 -s public",
