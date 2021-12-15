@@ -11,6 +11,14 @@
                 "displayName": true,
                 "preprocess": false
             }
+        ],
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "@src": "./src"
+                }
+            }
         ]
     ]
 }

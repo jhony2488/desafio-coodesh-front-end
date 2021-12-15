@@ -1,7 +1,5 @@
-/* eslint-disable import/no-anonymous-default-export */
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { compilerOptions } = require('./tsconfig.json');
-import { pathsToModuleNameMapper } from 'ts-jest/utils';
+const { compilerOptions } = require('./tsconfig.json')
+import { pathsToModuleNameMapper } from 'ts-jest/utils'
 /*
  * For a detailed explanation regarding each configuration property and type check, visit:
  * https://jestjs.io/docs/en/configuration.html
@@ -24,13 +22,17 @@ export default {
   collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: ['./src/*'],
+  collectCoverageFrom: [
+    './src/*',
+  ],
 
   // The directory where Jest should output its coverage files
   coverageDirectory: './__tests__/coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
-  coveragePathIgnorePatterns: ['/node_modules/'],
+  coveragePathIgnorePatterns: [
+    '/node_modules/',
+  ],
 
   // Indicates which provider should be used to instrument code for coverage
   coverageProvider: 'v8',
@@ -182,4 +184,4 @@ export default {
 
   // Whether to use watchman for file crawling
   // watchman: true,
-};
+}

@@ -28,12 +28,11 @@
     "typeRoots": [
       "./node_modules/@types"
     ],
-    "baseUrl": ".",
     "paths": {}
   },
   "include": [
     "next-env.d.ts",
-    "src/*.ts",
+    "src/***.ts",
     "**/*.tsx",
     ".eslintrc.js"
   ],
