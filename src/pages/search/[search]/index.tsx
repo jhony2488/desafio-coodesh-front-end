@@ -10,11 +10,11 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { createFilter } from 'react-search-input';
 import { useRouter } from 'next/router'
-import Articles from '../../UI/modules/Articles';
-import Header from '../../UI/components/organisms/Header';
-import { ArticlesContext } from '../../context/Articles';
-import { ServiceHighlights } from '../../services/articles';
-import { countLetter } from '../../utils/functions'
+import Articles from '../../../UI/modules/Articles';
+import Header from '../../../UI/components/organisms/Header';
+import { ArticlesContext } from '../../../context/Articles';
+import { ServiceHighlights } from '../../../services/articles';
+import { countLetter } from '../../../utils/functions'
 //import Image from 'next/image';
 
 const Home: NextPage = () => {
