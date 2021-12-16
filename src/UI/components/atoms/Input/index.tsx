@@ -67,8 +67,8 @@ const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
     };
 
     const getNameSearch = (value: string) => {
-        if(value==''){
-            void ServiceHighlights(setArticles, ()=>{});
+        if (value == '') {
+            void ServiceHighlights(setArticles, () => { });
         }
         setValue(name, value);
         setFilterPreviewSearchValue(value);

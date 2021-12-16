@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable prettier/prettier */
@@ -22,4 +23,15 @@ export const parOrImpar = (number: number) => {
     return 'Par';
   }
   return 'Impar';
+};
+
+export const countLetter = (phrase:string | string[], letter:string) => {
+  let amount = 0;
+
+  for (let i = 0; i < phrase.length; i++) {
+    if (phrase[i] == letter) {
+      amount++;
+    }
+  }
+  return amount;
 };

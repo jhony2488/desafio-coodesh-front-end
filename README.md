@@ -3,7 +3,7 @@
 
 <p align="center" id="about">🚀  Frontend Challenge Space Flight News</p>
 
- <p id="tabela-de-conteudo">This is a challenge by <a href="https://coodesh.com/">Coodesh</a></p>
+ <p id="tabela-de-conteudo" align="center">This is a challenge by <a href="https://coodesh.com/">Coodesh</a></p>
 
 <h2 id="tabela-de-conteudo">Tabela de conteúdos</h2>
 <!--ts-->
@@ -17,8 +17,6 @@
   - [Video Demo Link](#demo-video)
   
   - [Demo Link](#demo-link)
-
-  - [Storybook Link](#storybook-link)
 
 - [Como usar](#como-usar)
 
@@ -39,15 +37,15 @@
 - [Autor](#autor)
 <!--te-->
 
-<h2 id="como-usar">Demo</h2>
+<h2 id="demo">Demo</h2>
 
-<h3 id="como-usar">Video Space Flight News demo link</h3>
+<h3 id="demo">Video Space Flight News demo link</h3>
 
-<a href="https://coodesh.com/">Video Space Flight News</a>
+<a href="https://coodesh.com/" target="_blank">Video Space Flight News</a>
 
-<h3 id="como-usar">Demo Space Flight News Link</h3>
+<h3 id="demo">Demo Space Flight News Link</h3>
 
-<a href="https://coodesh.com/">Space Flight News</a>
+<a href="https://desafio-coodesh-front-end.netlify.app/" target="_blank">Space Flight News</a>
 
 
 <h2 id="como-usar">Como usar</h2>
@@ -64,7 +62,6 @@ $ cd desafio-coodesh-front-end
 # Instale as dependências(install dependencies)
 $ npm install || yarn install || yarn
 
-# após executa o comando acima abra: 
 ```
 
 <h3 id="uso">Uso com Docker</h3>
