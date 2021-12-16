@@ -19,10 +19,10 @@
   "parserOptions": {
     "project": "./tsconfig.json",
     "ecmaFeatures": {
-      "jsx": true,
+      "jsx": true
     },
     "ecmaVersion": 12,
-    "sourceType": "module",
+    "sourceType": "module"
   },
   "plugins": [
     "react",
@@ -37,8 +37,8 @@
         "**/*.stories.*"
       ],
       "rules": {
-        "import/no-anonymous-default-export": "off",
-      },
+        "import/no-anonymous-default-export": "off"
+      }
     },
     {
       "files": [
@@ -48,9 +48,9 @@
       "parserOptions": {
         "project": [
           "./tsconfig.json"
-        ], // Specify it only for TypeScript files
-      },
-    },
+        ]
+      }
+    }
   ],
   "rules": {
     "indent": [
@@ -88,11 +88,11 @@
       }
     ],
     "@typescript-eslint/no-unsafe-member-access": "off",
-    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-call": "off"
   },
   "settings": {
     "react": {
-      "version": "detect",
+      "version": "detect"
     }
   }
 }

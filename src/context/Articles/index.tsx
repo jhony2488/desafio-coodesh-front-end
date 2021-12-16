@@ -5,7 +5,7 @@ import React, { useState, createContext } from 'react';
 
 export const ArticlesContext: any = createContext({});
 
-function ArticlesProvider({ children }) {
+function ArticlesProvider({ children }: any) {
   const [articles, setArticles] = useState([]);
 
   return <ArticlesContext.Provider value={{ articles, setArticles }}>{children}</ArticlesContext.Provider>;

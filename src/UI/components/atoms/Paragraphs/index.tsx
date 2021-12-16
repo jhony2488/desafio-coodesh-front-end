@@ -25,6 +25,7 @@ const ParagraphsComponent: React.FC<ParagraphsInterface> = (
         textAlign = "left",
         type = 'Paragraph',
         backgroundColor = colors.purple,
+        borderColor="",
         ...rest
     }
 ) => {
@@ -46,7 +47,7 @@ const ParagraphsComponent: React.FC<ParagraphsInterface> = (
                 {valueDate || ''}
             </Date>}
             {type == 'ItemNewsSite' &&
-                <DivItemNewsSite backgroundColor={backgroundColor} title={content} fontSize={fontSize}>
+                <DivItemNewsSite backgroundColor={backgroundColor} title={content} fontSize={fontSize} borderColor={borderColor}>
                     <ItemNewsSite color={color} title={content} fontSize={fontSize} fontWeight={fontWeight} textAlign={textAlign} {...rest} >
                         {content}
                     </ItemNewsSite>

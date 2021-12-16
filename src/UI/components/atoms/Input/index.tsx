@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
@@ -6,6 +7,7 @@
 import React, { useState, useEffect, forwardRef, useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { BiSearch } from 'react-icons/bi';
+// @ts-ignore
 import SearchInput, { createFilter } from 'react-search-input';
 
 //import { filterPreviewSearch } from '../../../utils/functions';

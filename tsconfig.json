@@ -26,7 +26,8 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "typeRoots": [
-      "./node_modules/@types"
+      "./node_modules/@types",
+      "./src/@types"
     ],
     "paths": {}
   },
@@ -34,7 +35,8 @@
     "next-env.d.ts",
     "src/***.ts",
     "**/*.tsx",
-    ".eslintrc.js"
+    ".eslintrc.js",
+    "./src/@types/alltypes.d.ts"
   ],
   "exclude": [
     "node_modules",

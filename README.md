@@ -18,6 +18,8 @@
   
   - [Demo Link](#demo-link)
 
+  - [Storybook Link](#storybook-link)
+
 - [Como usar](#como-usar)
 
   - [Instalação](#instalacao)
@@ -39,13 +41,14 @@
 
 <h2 id="como-usar">Demo</h2>
 
-<h3 id="como-usar">Video demo link</h3>
+<h3 id="como-usar">Video Space Flight News demo link</h3>
 
-<a href="https://coodesh.com/">Link</a>
+<a href="https://coodesh.com/">Video Space Flight News</a>
 
-<h3 id="como-usar">Demo Link</h3>
+<h3 id="como-usar">Demo Space Flight News Link</h3>
 
-<a href="https://coodesh.com/">Link</a>
+<a href="https://coodesh.com/">Space Flight News</a>
+
 
 <h2 id="como-usar">Como usar</h2>
 
@@ -61,6 +64,7 @@ $ cd desafio-coodesh-front-end
 # Instale as dependências(install dependencies)
 $ npm install || yarn install || yarn
 
+# após executa o comando acima abra: 
 ```
 
 <h3 id="uso">Uso com Docker</h3>
@@ -69,6 +73,7 @@ $ npm install || yarn install || yarn
 # Execute a aplicação com docker
 $ npm run start-docker || yarn start-docker
 
+# após executa o comando acima abra: http://localhost:3000/ 
 ```
 
 <h3 id="uso">Uso e execução sem o Docker em modo de desenvolvimento</h3>
@@ -77,6 +82,7 @@ $ npm run start-docker || yarn start-docker
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev || yarn dev
 
+# após executa o comando acima abra: http://localhost:3000/ 
 ```
 
 <h3 id="uso">Uso e execução sem o Docker em modo de produção</h3>
@@ -88,6 +94,7 @@ $ npm run build || yarn build
 # Start o projeto em modo de produção(Clone this repository)
 $ npm run start || yarn start
 
+# após executa o comando acima abra: http://localhost:3000/
 ```
 
 
@@ -97,6 +104,7 @@ $ npm run start || yarn start
 # Executar storybook
 $ npm run storybook || yarn storybook
 
+# após executa o comando acima abra: http://localhost:6006/
 ```
 
 

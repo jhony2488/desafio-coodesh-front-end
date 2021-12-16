@@ -10,7 +10,7 @@ export const ServiceHighlights = async (
   onSort = false,
   value = { value: '' },
 ) => {
-  let res
+  let res;
   await api
     .get('/articles')
     .then((response: any) => {
@@ -19,17 +19,17 @@ export const ServiceHighlights = async (
           sortFunction(a, b, value.value),
         );
         setArticles(sortArticles);
-        res=response.status
+        res = response.status;
         return res.status;
       }
       const articles = response.data;
       setArticles(articles);
-      res=response.status;
+      res = response.status;
       return res.status;
     })
     .catch((err: any) => {
       setMessageError(err);
       return err;
     });
-    return res
+  return res;
 };

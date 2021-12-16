@@ -20,7 +20,7 @@ export const FiltersWrapper = styled.div`
   justify-items: center;
   align-items: center;
   height: 100%;
-  @media (max-width:1080px) {
+  @media (max-width: 1080px) {
     grid-template-columns: 1fr;
     width: 90%;
   }

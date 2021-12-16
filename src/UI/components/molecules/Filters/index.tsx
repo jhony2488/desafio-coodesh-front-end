@@ -1,3 +1,4 @@
+/* eslint-disable semi */
 /* eslint-disable quotes */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-explicit-any */
