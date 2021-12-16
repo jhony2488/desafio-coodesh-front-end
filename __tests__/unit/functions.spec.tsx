@@ -1,4 +1,4 @@
-import { dateFormat, parOrImpar, sortFunction } from '../../src/utils/functions';
+import { dateFormat, parOrImpar, sortFunction,countLetter } from '../../src/utils/functions';
 import { mockInputSearch, mockupSortNovas, mockupSortAntigas } from '../../src/utils/input'
 
 describe('Functions', () => {
@@ -20,6 +20,9 @@ describe('Functions', () => {
     expect(mockInputSearch.sort((a: any, b: any) =>
       sortFunction(a, b, 'Mais novas'),
     )).toStrictEqual(mockupSortNovas);
+  });
+  it("should count caracters", () => {
+    expect(countLetter('SpaceX-VP-says-Starship-is-already-winning-commercial-launch-contracts','-')).toStrictEqual(9);
   });
 });
 
