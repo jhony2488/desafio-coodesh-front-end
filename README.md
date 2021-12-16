@@ -41,7 +41,7 @@
 
 <h3 id="demo">Video Space Flight News demo link</h3>
 
-<a href="https://coodesh.com/" target="_blank">Video Space Flight News</a>
+<a href="https://www.loom.com/share/4a53c2fc2f3048a19818c40e17a30a39" target="_blank">Video Space Flight News</a>
 
 <h3 id="demo">Demo Space Flight News Link</h3>
 
